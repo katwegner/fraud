@@ -2,6 +2,31 @@
 # Overview
 This project is focused on detecting fraudulent transactions via the Ugandan mobile payment company Xente. Every 500th Xente transaction is fraudulent, which makes up 1/3 rd of the total transaction volume, 300M UGX. This means that Xente is heavily used for criminal transactions, puts Xente's valued customers at risk of fraud and strongly damages the reputation of Xente. So an automatic fraud detection algorithm is really important to prevent these criminal transactions and hence to protect Xente's customers. <br>
 For this algorithm to work properly, Machine Learning is needed in order to accurately detect fraudulent transactions instead of falsely accusing valued customers.     
+# Data Structure
+The data contains information about a sample of approximately 140,000 transactions that occurred between 15 November 2018 and 15 March 2019. Information on the transactions include:<br>
+
+- TransactionId : Unique transaction identifier on platform
+- BatchId : Unique number assigned to a batch of transactions for processing
+- AccountId : Unique number identifying the customer on platform
+- SubscriptionId : Unique number identifying the customer subscription
+- CustomerId : Unique identifier attached to Account
+- CurrencyCode : Country currency
+- CountryCode : Numerical geographical code of country
+- ProviderId : Source provider of Item bought.
+- ProductId : Item name being bought.
+- ProductCategory : ProductIds are organized into these broader product categories.
+- ChannelId : "Identifies if customer used web,Android, IOS, pay later or checkout."
+- Amount : Value of the transaction. Positive for debits from customer account and negative for credit into customer account
+- Value : Absolute value of the amount (including transaction fee)
+- TransactionStartTime : Transaction start time
+- PricingStrategy : Category of Xente's pricing structure for merchants
+- FraudResult : Fraud status of transaction 1 -yes or 0-No
+
+The data did not contained any NaN values. 
+
+# Stakeholder info
+Our stakeholder here is Xente, the payment platform. Xente is an African Fintech provider company. Their biggest customer include Jumia, Africa's biggest e-commerce company. 
+
 
 Fraud Detection:<br>
 Value of Product:<br>
